@@ -1,0 +1,95 @@
+############################
+# Allgemeines & Betriebssystem-Müll
+############################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+############################
+# Git – eigene Arbeitsbereiche
+############################
+# Stash-Patches & temporäre Merge-Files
+*.orig
+*.rej
+
+############################
+# Python / VS Code
+############################
+# Bytecode & Interpreter-Artefakte
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtuelle Umgebungen
+.venv/
+venv/
+env/
+
+# Build-Artefakte von Packages
+build/
+dist/
+*.egg-info/
+
+# Werkzeug- und Editor-Ordner
+.vscode/
+.idea/
+
+# Unit-Test-Outputs
+.coverage
+htmlcov/
+pytest_cache/
+
+############################
+# SQL / Datenbanken
+############################
+# Automatische Dumps & temporäre Imports
+# (falls ihr Skripte habt, die nightly-Backups erstellen)
+*_dump.sql
+*_backup.sql
+*.sql.gz
+*.sql.zip
+
+# Lokale SQLite-Files (falls separate Tests)
+*.sqlite3
+*.db
+
+############################
+# Rohdaten & sensible Daten
+############################
+# Original-Excel-Backups → liegen extern oder im Fileshare
+/data/raw/*
+!*/.keep        # leere Ordner behalten
+
+# CSV-Zwischenstände, die per ETL neu erzeugt werden
+/data/tmp/*
+/data/staging/*
+
+# .env-Dateien mit Secrets (z. B. DB-Passwörter für Docker)
+.env
+.env.*
+
+############################
+# Docker
+############################
+# Von Docker erstellte Overrides / Compose-Logs
+docker-compose.override.yml
+docker-compose.*.yml
+*.log
+
+############################
+# Miro-Export & Präsentations-Artefakte
+############################
+*.png
+*.jpg
+*.mp4
+*.pptx
+
+############################
+# Sonstiges
+############################
+# MacOS Spotlight-Index
+.Spotlight-V100
+# Windows Thumbnail-Cache
+*.stackdump
