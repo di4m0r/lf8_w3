@@ -2,20 +2,6 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>AntiQue Fahrzeugvermietung – Datenbank‑Rebuild</title>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:2rem;line-height:1.6;color:#222}
-    h1,h2,h3{color:#0d47a1;margin-top:2rem}
-    h1{font-size:2.2rem}
-    h2{font-size:1.6rem}
-    h3{font-size:1.3rem}
-    table{border-collapse:collapse;width:100%;margin:1rem 0}
-    th,td{border:1px solid #ccc;padding:0.5rem;text-align:left;vertical-align:top}
-    th{background:#f0f4ff}
-    code{background:#f5f5f5;padding:2px 4px;border-radius:4px;font-family:SFMono-Regular,Consolas,Roboto Mono,Menlo,monospace}
-    pre{background:#f5f5f5;padding:1rem;overflow-x:auto;border-radius:6px}
-    .mermaid{background:#fff;padding:0;margin:1rem 0}
-  </style>
 </head>
 <body>
   <h1>AntiQue Fahrzeugvermietung – Datenbank‑Rebuild</h1>
