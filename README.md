@@ -98,14 +98,6 @@
     <li><strong>SQLLint</strong>: <code>sqlfluff lint sql/</code></li>
   </ul>
 
-  <h2>👥 Contributing</h2>
-  <ol>
-    <li>Feature‑Branch aus <code>dev</code> erstellen</li>
-    <li>Meaningful Commits mit konventionellem Prefix (<code>feat:</code>, <code>fix:</code> …)</li>
-    <li>Pull‑Request + SQL‑Unit‑Tests</li>
-  </ol>
-  <p><em>Code of Conduct</em> und PR‑Template liegen im Ordner <code>.github/</code>.</p>
-
   <h2>🎓 Lernfeld‑Bezug (LF 8)</h2>
   <ul>
     <li><strong>Datenbanken anpassen, sichern, wiederherstellen</strong> – Schema‑Design, Normalisierung, DDL + DML</li>
