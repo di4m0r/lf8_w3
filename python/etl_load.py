@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-etl_load.py  –  Ein durchgängiges ETL-Skript für Altdaten
+etl_load.py  Ein durchgängiges ETL-Skript für Altdaten
 
     ▸ liest eine oder mehrere Excel-Dateien (Pattern: INPUT_PATTERN)
     ▸ bereinigt Datumsfelder (Liste DATE_COLS → Format YYYY-MM-DD)
@@ -15,7 +15,6 @@ Voraussetzungen:
 
 from pathlib import Path
 import sys
-from datetime import datetime
 
 import pandas as pd
 from sqlalchemy import create_engine
