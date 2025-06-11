@@ -35,8 +35,6 @@
       <tr><td>Datenbank</td><td><strong>MariaDB 10.11</strong> (Docker‑Image: <code>mariadb:10.11</code>)</td></tr>
       <tr><td>Scripting</td><td>Python 3.11 + pandas, mysql‑connector‑python</td></tr>
       <tr><td>Diagramme</td><td>draw.io (Database Toolkit)</td></tr>
-      <tr><td>Versionierung</td><td>Git + GitHub Classroom</td></tr>
-      <tr><td>CI&nbsp;(optional)</td><td>GitHub Actions (SQL Lint + Unit‑Tests)</td></tr>
     </tbody>
   </table>
 
