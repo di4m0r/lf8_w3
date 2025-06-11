@@ -78,14 +78,16 @@
   </ul>
 
   <h2>🗄️ Schema Snippets</h2>
-  <pre><code>CREATE TABLE auto (
-  id_auto         INT PRIMARY KEY AUTO_INCREMENT,
-  kennzeichen     VARCHAR(10)  NOT NULL UNIQUE,
-  hersteller      VARCHAR(20)  NOT NULL,
-  typ             VARCHAR(30)  NOT NULL,
-  baujahr         SMALLINT     CHECK (baujahr &gt;= 1900),
-  preisgruppe_id  INT          REFERENCES preisgruppe(id_preisgruppe)
-  -- … weitere Felder laut ER
+  <pre><code>CREATE TABLE kunde (
+    Kundennumm INT PRIMARY KEY,
+    Nachname VARCHAR(30),
+    Vorname VARCHAR(30),
+    Strasse VARCHAR(50),
+    Ort VARCHAR(30),
+    PLZ VARCHAR(5),
+    Land VARCHAR(30),
+    Geburtsdatum DATE,
+    Telefon VARCHAR(20)
 );</code></pre>
   <p>Vollständiges Schema siehe <code>sql/create_schema.sql</code>.</p>
 
