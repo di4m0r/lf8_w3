@@ -35,8 +35,6 @@
       <tr><td>Datenbank</td><td><strong>MariaDB 10.11</strong> (Docker‑Image: <code>mariadb:10.11</code>)</td></tr>
       <tr><td>Scripting</td><td>Python 3.11 + pandas, mysql‑connector‑python</td></tr>
       <tr><td>Diagramme</td><td>draw.io (Database Toolkit)</td></tr>
-      <tr><td>Versionierung</td><td>Git + GitHub Classroom</td></tr>
-      <tr><td>CI&nbsp;(optional)</td><td>GitHub Actions (SQL Lint + Unit‑Tests)</td></tr>
     </tbody>
   </table>
 
@@ -80,14 +78,16 @@
   </ul>
 
   <h2>🗄️ Schema Snippets</h2>
-  <pre><code>CREATE TABLE auto (
-  id_auto         INT PRIMARY KEY AUTO_INCREMENT,
-  kennzeichen     VARCHAR(10)  NOT NULL UNIQUE,
-  hersteller      VARCHAR(20)  NOT NULL,
-  typ             VARCHAR(30)  NOT NULL,
-  baujahr         SMALLINT     CHECK (baujahr &gt;= 1900),
-  preisgruppe_id  INT          REFERENCES preisgruppe(id_preisgruppe)
-  -- … weitere Felder laut ER
+  <pre><code>CREATE TABLE kunde (
+    Kundennumm INT PRIMARY KEY,
+    Nachname VARCHAR(30),
+    Vorname VARCHAR(30),
+    Strasse VARCHAR(50),
+    Ort VARCHAR(30),
+    PLZ VARCHAR(5),
+    Land VARCHAR(30),
+    Geburtsdatum DATE,
+    Telefon VARCHAR(20)
 );</code></pre>
   <p>Vollständiges Schema siehe <code>sql/create_schema.sql</code>.</p>
 
@@ -97,14 +97,6 @@
     <li><strong>Coverage</strong>: Mindestwert 80 %</li>
     <li><strong>SQLLint</strong>: <code>sqlfluff lint sql/</code></li>
   </ul>
-
-  <h2>👥 Contributing</h2>
-  <ol>
-    <li>Feature‑Branch aus <code>dev</code> erstellen</li>
-    <li>Meaningful Commits mit konventionellem Prefix (<code>feat:</code>, <code>fix:</code> …)</li>
-    <li>Pull‑Request + SQL‑Unit‑Tests</li>
-  </ol>
-  <p><em>Code of Conduct</em> und PR‑Template liegen im Ordner <code>.github/</code>.</p>
 
   <h2>🎓 Lernfeld‑Bezug (LF 8)</h2>
   <ul>
